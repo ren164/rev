@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão JavaScript - Parte 02</title>
+</head>
+<body>
+    <h1>Revisão JavaScript - Parte 02</h1>
+
+    <h2>Entrada de Dados</h2>
+    <section>
+        <h3>1. Boas Vindas</h3>
+        <button onclick="boasVindas()">Digite seu nome</button>
+        <div id="boasVindasResult"></div>
+    </section>
+
+    <section>
+        <h3>2. Mostrando valor digitado</h3>
+        <input type="text" id="textoInput" placeholder="Digite algo...">
+        <button onclick="mostrarTexto()">Mostrar Texto</button>
+        <div id="textoResult"></div>
+    </section>
+
+    <h2>Conversão de Tipos</h2>
+    <section>
+        <h3>1. Soma de valores</h3>
+        <input type="number" id="num1" placeholder="Primeiro número">
+        <input type="number" id="num2" placeholder="Segundo número">
+        <button onclick="somarValores()">Calcular Soma</button>
+        <div id="somaResult"></div>
+    </section>
+
+    <section>
+        <h3>2. Concatenação</h3>
+        <input type="number" id="numConcat" placeholder="Digite um número">
+        <button onclick="concatenarNumero()">Concatenar</button>
+        <div id="concatResult"></div>
+    </section>
+
+    <section>
+        <h3>3. Maioridade</h3>
+        <input type="number" id="idade" placeholder="Digite sua idade">
+        <button onclick="verificarMaioridade()">Verificar</button>
+        <div id="maioridadeResult"></div>
+    </section>
+
+    <h2>Funções de Texto</h2>
+    <section>
+        <h3>1. Manipulando Texto</h3>
+        <input type="text" id="frase" placeholder="Digite uma frase...">
+        <button onclick="manipularTexto()">Manipular Texto</button>
+        <div id="textoManipuladoResult"></div>
+    </section>
+
+    <h2>Funções Matemáticas</h2>
+    <section>
+        <h3>1. Adivinhar o número</h3>
+        <input type="number" id="palpite" placeholder="Palpite (1-10)" min="1" max="10">
+        <button onclick="adivinharNumero()">Adivinhar</button>
+        <button onclick="gerarNovoNumero()">Novo Número</button>
+        <div id="adivinharResult"></div>
+    </section>
+
+    <section>
+        <h3>2. Arredondando valores</h3>
+        <input type="number" id="decimal" placeholder="Número decimal" step="0.1">
+        <button onclick="arredondarValores()">Arredondar</button>
+        <div id="arredondarResult"></div>
+    </section>
+
+    <section>
+        <h3>3. Manipulando números</h3>
+        <button onclick="analisarNumeros()">Gerar e Analisar</button>
+        <div id="analiseResult"></div>
+    </section>
+
+    <section>
+        <h3>4. Novos valores</h3>
+        <input type="number" id="numTransform" placeholder="Digite um número">
+        <button onclick="transformarNumero()">Transformar</button>
+        <div id="transformResult"></div>
+    </section>
+
+    <h2>Datas</h2>
+    <section>
+        <h3>1. Mostrando a data</h3>
+        <button onclick="mostrarData()">Mostrar Data Atual</button>
+        <div id="dataResult"></div>
+    </section>
+
+    <section>
+        <h3>2. Dia do aniversário</h3>
+        <input type="date" id="aniversario">
+        <button onclick="calcularAniversario()">Calcular</button>
+        <div id="aniversarioResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
